@@ -1,0 +1,38 @@
+//----------------------------------------------------------
+// Alpha Core Generator - Project File
+//----------------------------------------------------------
+
+{
+    "top_name" : "sample",
+    "excel_name" : "sample.xlsx",
+    "output_folder" : "./output/sample/",
+
+//----------------------------------------------------------
+// RTL List
+//  - Must not be the same instance_name/wire_name
+//  - The next 4 items should be written as group.
+//     instance_name/wire_name/file_path/parameter
+//----------------------------------------------------------
+
+    "file_list": [
+        {
+            "instance_name": "u_master",
+            "wire_name"    : "mst_",
+            "file_path"    : "input/sample/master.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_slave",
+            "wire_name"    : "slv_",
+            "file_path"    : "input/sample/slave.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_crm",
+            "wire_name"    : "crm_",
+            "file_path"    : "input/sample/crm.v",
+            "parameter"    : {}
+        }
+
+    ]
+}
