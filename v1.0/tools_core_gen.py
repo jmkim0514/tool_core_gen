@@ -4,10 +4,15 @@ import copy
 import json
 import argparse
 from pprint import pprint
-sys.path.append("./lib")
-from modport_r0p04 import *
-from alpgen import alpgen, alpgen_json, alpgen_excel
-from alpgen_util import alpgen_vip
+# sys.path.append("./lib")
+# from modport_r0p04 import *
+# from alpgen import alpgen, alpgen_json, alpgen_excel
+# from alpgen_util import alpgen_vip
+
+sys.path.append("../../lib/")
+from modport_v0p1 import *
+from alpgen_v0p1_ing import alpgen, alpgen_json, alpgen_excel
+#from alpgen_util import alpgen_vip
 
 #------------------------------------------------------------------------------
 # Function - @mark
@@ -48,32 +53,6 @@ def check_dir(file_path_i):
     file_path = os.path.dirname(file_path_i)
     if not os.path.isdir(file_path):
         os.makedirs(file_path)
-
-
-def disp_help():
-    print ('==================================================')
-    print (' HELP : ')
-    print ('==================================================')
-    help = '''\
- platform_designer.py -i file_name.apd
-    '''
-    print (help)
-    input('Press any key to continue...')
-    return True
-
-comment_apd = '''
-    APD Format:
-        key = value
-    
-    KEY LIST:
-    - RTL module 
-        top_name      : top module/file name  (value example : soc_top)
-        excel_name    : Excel file name            (value example : soc_top.xlsx)
-        output_folder : Output folder name         (value example : ./work)
-        instance_name : RTL module - instance name (value example : peri_top)
-        wire_name     : RTL module - wire name     (value example : peri_)
-        file_path     : RTL module - file path     (value example : ../rtl/peri_top.v)
-'''
 
 # write_rtl function
 # string to dictionary
@@ -283,6 +262,7 @@ def write_excel(i_top_name, i_file_list, i_excel_name, i_out_folder):
                 list_temp.append(pi.lsb)
                 list_port.append(list_temp)
             module_name = pi.module_name
+
         json.add_module(module_name, file_path, list_port)
         json.add_instance(inst_name, module_name, wire_name, dic_param)
         json.add_top(i_top_name, [])
