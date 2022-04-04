@@ -1,0 +1,35 @@
+//----------------------------------------------------------
+// Alpha Core Generator - Project File
+//----------------------------------------------------------
+{
+    "top_name" : "test_core_top_gen",
+    "excel_name" : "test_core_top_gen.xlsx",
+    "output_folder" : "./output/test_core_top_gen/",
+
+//----------------------------------------------------------
+// Test for core_top_gen
+//  - 
+//  - 
+//----------------------------------------------------------
+
+    "file_list": [
+        {
+            "instance_name": "u_main_crm",
+            "wire_name"    : "crm_",
+            "file_path"    : "input/test_core_top_gen/main_crm.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_cpu_hpdf",
+            "wire_name"    : "cpu_",
+            "file_path"    : "input/test_core_top_gen/cpu_hpdf.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_peri_hpdf",
+            "wire_name"    : "peri_",
+            "file_path"    : "input/test_core_top_gen/peri_hpdf.v",
+            "parameter"    : {}
+        }
+    ]
+}

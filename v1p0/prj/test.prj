@@ -1,0 +1,55 @@
+//----------------------------------------------------------
+// Alpha Core Generator - Project File
+//----------------------------------------------------------
+
+{
+    "top_name" : "core_top",
+    "excel_name" : "dnpu_top.xlsx",
+    "output_folder" : "./output/dnpu/",
+
+//----------------------------------------------------------
+// RTL List
+//  - Must not be the same instance_name/wire_name
+//  - The next 4 items should be written as group.
+//     instance_name/wire_name/file_path/parameter
+//----------------------------------------------------------
+
+    "file_list": [
+        {
+            "instance_name": "u_peri_bus",
+            "wire_name"    : "peri_",
+            "file_path"    : "input/dnpu/nic400_peri_bus_r0p00.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_cpu_bus",
+            "wire_name"    : "cpu_",
+            "file_path"    : "input/dnpu/nic400_cpu_bus_r0p00.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_main_bus",
+            "wire_name"    : "main_",
+            "file_path"    : "input/dnpu/nic400_main_bus_r0p00.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_crm",
+            "wire_name"    : "crm_",
+            "file_path"    : "input/dnpu/crm.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_crm_cpu",
+            "wire_name"    : "crm_cpu_",
+            "file_path"    : "input/dnpu/crm_cpu.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_crm_peri",
+            "wire_name"    : "crm_peri_",
+            "file_path"    : "input/dnpu/crm_peri.v",
+            "parameter"    : {}
+        }
+    ]
+}
