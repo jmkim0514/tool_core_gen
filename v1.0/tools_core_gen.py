@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import copy
 import json
 import argparse
@@ -23,10 +24,21 @@ def get_argument():
     Returns:
         dict : return project file
     """
-    parser = argparse.ArgumentParser(description="tools_core_gen: Core Generator. (jimmy@alpha-holdings.co.kr)")
-    parser.add_argument('-p', dest="prj_file", required=True, help="project file")
+    parser = argparse.ArgumentParser(description="tool_core_gen: Core Generator. (jimmy@alpha-holdings.co.kr)")
+    parser.add_argument('-p', dest="prj_file", required=False, help="project file")
     parser.add_argument('-o', dest="option", required=False, default='0', help="option")
+    parser.add_argument('-c', dest="clean", action="store_true", required=False, help="remove the created file/folder")
     args = parser.parse_args()
+
+    if args.clean:
+        import platform
+        my_os=platform.system()
+        if(my_os =="Windows"):
+            os.system("rmdir /s /q output")
+        else:
+            os.system("rm -rf output")
+        print ('[LOG] remove the created file and folder')
+        sys.exit(0)
 
     if os.path.isfile(args.prj_file)==False:
         print ("[LOG] *E, Can not find input file = ", args.prj_file)
@@ -267,12 +279,13 @@ def write_excel(i_top_name, i_file_list, i_excel_name, i_out_folder):
         json.add_instance(inst_name, module_name, wire_name, dic_param)
         json.add_top(i_top_name, [])
 
-    json_file_name = os.path.join(i_out_folder, i_top_name)+'.rtl.json'
+    # json_file_name = os.path.join(i_out_folder, i_top_name)+'.rtl.json'
     excel_file_name = os.path.join(i_out_folder, i_excel_name)
     # make json file
-    json.write_json(json_file_name)
+    # json.write_json(json_file_name)
     # make excel doc
-    gen = alpgen(json_file_name)
+    # gen = alpgen(json_file_name)
+    gen = alpgen(json.get_json())
     gen.write_excel_group(excel_file_name)
 
 SUB_TOP_LIST = []    # json_sub object list
@@ -418,13 +431,53 @@ def write_rtl (i_excel_name, i_out_folder):
         mod_name = json_sub.JSON['top']['modname']
         json_name = mod_name+'.json'
         rtl_name = mod_name+'.v'
-        json_file_name = os.path.join(i_out_folder, json_name)
+        # json_file_name = os.path.join(i_out_folder, json_name)
         rtl_file_name  = os.path.join(i_out_folder, rtl_name)
-        json_sub.write_json(json_file_name)
-        gen = alpgen(json_file_name)
+        # json_sub.write_json(json_file_name)
+        write_comment(json_sub)
+        gen = alpgen(json_sub.get_json())
         gen.write_rtl(rtl_file_name)
 
+Comment = """\
+//==============================================================================
+//
+// Project : {0}
+//
+// Verilog RTL(Behavioral) model
+//
+// This confidential and proprietary source code may be used only as authorized
+// by a licensing agreement from ALPHAHOLDINGS Limited. The entire notice above
+// must be reproduced on all authorized copies and copies may only be made to
+// the extent permitted by a licensing agreement from ALPHAHOLDINGS Limited.
+//
+// COPYRIGHT (C) ALPHAHOLDINGS, inc. 2022
+//
+//==============================================================================
+// File name : {1}
+// Version : {2}
+// Description :
+// Simulator : NC Verilog
+// Created by : {3}
+// Date : {4}
+//==============================================================================
 
+"""
+
+def write_comment(obj_i):
+    modname = obj_i.JSON['top']['modname']
+    times = time.localtime()[0:6]
+    year   = str(times[0])
+    month  = str(times[1])
+    day    = str(times[2])
+    hour   = str(times[3])
+    minute = str(times[4])
+
+    dates = "{0}-{1:0>2}-{2:0>2}  {3}:{4}".format(year, month, day, hour, minute)
+
+    result = Comment.format('PNAI70X', modname, VERSION, DESIGNER, dates)
+    obj_i.JSON['top']['comment'] = {}
+    obj_i.JSON['top']['comment']['pre'] = result
+    return True
 
 #------------------------------------------------------------------------------
 # Main - @mark
@@ -435,6 +488,16 @@ file_list = []
 top_name   = dict_prj['top_name']
 excel_name = dict_prj['excel_name']
 out_folder = dict_prj['output_folder']
+
+if dict_prj.get('alp_tools')!=None:
+    VERSION = dict_prj['alp_tools']['version']
+    PROJECT = dict_prj['alp_tools']['project']
+    DESIGNER = dict_prj['alp_tools']['designer']
+else:
+    VERSION = "v1.0"
+    PROJECT = "alpha project"
+    DESIGNER = "SoC Designer"
+
 
 for di in dict_prj['file_list']:
     inst_name = di['instance_name']
