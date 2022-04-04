@@ -4,6 +4,7 @@
 v1p0
 - tool_core_gen 에서 alpgen write_rtl 시 json 을 직접 받아 생성함 (json file생성 안함으로 수정)
 - top port 연결 bug fix
+- RTL comment 기능 추가
 
 
 
