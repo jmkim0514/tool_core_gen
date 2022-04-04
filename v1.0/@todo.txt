@@ -1,1 +1,0 @@
-project file에서 perfix가 중복되면 error report
