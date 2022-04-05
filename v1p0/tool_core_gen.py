@@ -5,15 +5,9 @@ import copy
 import json
 import argparse
 from pprint import pprint
-# sys.path.append("./lib")
-# from modport_r0p04 import *
-# from alpgen import alpgen, alpgen_json, alpgen_excel
-# from alpgen_util import alpgen_vip
-
 sys.path.append("../../lib/")
 from modport_v0p1 import *
-from alpgen_v0p1_ing import alpgen, alpgen_json, alpgen_excel
-#from alpgen_util import alpgen_vip
+from alpgen_v0p2 import alpgen, alpgen_json, alpgen_excel
 
 #------------------------------------------------------------------------------
 # Function - @mark
