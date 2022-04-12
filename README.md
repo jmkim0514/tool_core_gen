@@ -6,6 +6,9 @@ v1p0
 - top port 연결 bug fix
 - RTL comment 기능 추가
 
+v1p1
+- write file 할때 folder 가 없을 경우 자동 생성
+
 
 
 # Todo

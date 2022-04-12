@@ -1,0 +1,40 @@
+//----------------------------------------------------------
+// Alpha Core Generator - Project File
+//----------------------------------------------------------
+
+{
+    "alp_tools": {
+        "name": "tool_core_gen",
+        "type": "prj",
+        "version": "v1.0",
+        "project": "PNAI70X",
+        "designer": "jongmin kim"
+    },
+
+    "top_name" : "core_top",
+    "excel_name" : "test_core_gen.xlsx",
+    "output_folder" : "./output/test/",
+
+//----------------------------------------------------------
+// RTL List
+//  - Must not be the same instance_name/wire_name
+//  - The next 4 items should be written as group.
+//     instance_name/wire_name/file_path/parameter
+//----------------------------------------------------------
+
+    "file_list": [
+        {
+            "instance_name": "u_peri_bus",
+            "wire_name"    : "peri_",
+            "file_path"    : "input/bus_top/bus_peri.v",
+            "parameter"    : {}
+        },
+        {
+            "instance_name": "u_slave_apb",
+            "wire_name"    : "slave_apb",
+            "file_path"    : "input/bus_top/slave_apb.v",
+            "parameter"    : {}
+        }
+
+    ]
+}
