@@ -300,7 +300,7 @@ def write_excel(i_top_name, i_file_list, i_excel_name, i_out_folder):
     gen.write_excel_group(excel_file_name)
 
 SUB_TOP_LIST = []    # json_sub object list
-def write_rtl (i_excel_name, i_out_folder):
+def write_rtl (i_excel_name, i_out_folder, enb_json_i):
     global HIER_DIC
     SUB_TOP_LIST = []
     HIER_LIST = []  # format = [ $hpdf_0: [inst_0, inst_1], $hpdf_1: [inst_2, inst_3], $top: [$hpdf_0, $hpdf_1] ]
@@ -458,12 +458,22 @@ def write_rtl (i_excel_name, i_out_folder):
     #---------------------------------------------------------------
     for json_sub in SUB_TOP_LIST:
         mod_name = json_sub.JSON['top']['modname']
-        json_name = mod_name+'.json'
+#        json_name = mod_name+'.json'
         rtl_name = mod_name+'.v'
         # json_file_name = os.path.join(i_out_folder, json_name)
         rtl_file_name  = os.path.join(i_out_folder, rtl_name)
         # json_sub.write_json(json_file_name)
         write_comment(json_sub)
+
+        if enb_json_i:
+            json_name = mod_name+'.json'
+            json_file_name = os.path.join(i_out_folder, json_name)
+            print('=============================')
+            print(json_file_name)
+            check_dir(json_file_name)
+            with open(json_file_name, 'w', encoding='utf-8') as f:
+                json.dump(json_sub.get_json(), f, indent="\t")
+
         gen = alpgen(json_sub.get_json())
         check_dir(rtl_file_name)
         gen.write_rtl(rtl_file_name)
@@ -519,6 +529,14 @@ top_name   = dict_prj['top_name']
 excel_name = dict_prj['excel_name']
 out_folder = dict_prj['output_folder']
 
+if dict_prj.get('enable_output_json'):
+    if dict_prj['enable_output_json'].lower()=='true':
+        enable_json = True
+    else:
+        enable_json = False
+else:
+    enable_json = False
+
 if dict_prj.get('alp_tools')!=None:
     VERSION = dict_prj['alp_tools']['version']
     PROJECT = dict_prj['alp_tools']['project']
@@ -554,15 +572,6 @@ elif option=='2':
 if _in=='1':
     write_excel(top_name, file_list, excel_name, out_folder)
 elif _in=='2':
-    write_rtl(excel_name, out_folder)
+    write_rtl(excel_name, out_folder, enable_json)
 else:
     print ('[ERROR] Not Support')
-
-
-
-
-
-
-
-
-

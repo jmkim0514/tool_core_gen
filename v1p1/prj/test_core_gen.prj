@@ -14,6 +14,7 @@
     "top_name" : "core_top",
     "excel_name" : "test_core_gen.xlsx",
     "output_folder" : "./output/test/",
+    "enable_output_json" : "true",
 
 //----------------------------------------------------------
 // RTL List
