@@ -8,7 +8,9 @@ v1p0
 
 v1p1
 - write file 할때 folder 가 없을 경우 자동 생성
-
+- project file에 enable_output_json 변수 추가
+    - enable_output_json:true (write_rtl 시 json file을 같이 출력)
+    - 이외 write_rtl 시 json file 출력하지 않음
 
 
 # Todo
