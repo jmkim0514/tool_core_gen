@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/user/de03/DE/util/anaconda3/bin/python3
 # coding: utf-8
 #===============================================================================
 #  File name   : tool_core_gen.py
