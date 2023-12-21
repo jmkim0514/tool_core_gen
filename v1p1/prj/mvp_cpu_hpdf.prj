@@ -1,0 +1,38 @@
+{ 
+    "alp_tools": {
+        "name": "tool_core_gen",
+        "type": "prj",
+        "version": "v1.1",
+        "project": "MVP",
+        "designer": "bhoh"
+    },
+
+    "top_name" : "cpu_hpdf",            
+    "excel_name" : "SoCBuilder_mvp_cpu_hpdf.xlsx",     
+    "output_folder" : "./output/mvp/cpu_hpdf/", 
+                                            
+                                            
+   "file_list": [                         
+      {                                                   
+          "instance_name": "u_cpu_bus",      
+          "wire_name"    : "cpu_bus_",           
+          "file_path"    : "./input/mvp/nic400_cpu_bus_r0p06.v",    
+          "parameter"    : {}                           
+                                                          
+      },      
+      {                                                   
+          "instance_name": "u_cpu_crm",      
+          "wire_name"    : "cpu_crm_",           
+          "file_path"    : "./input/mvp/mvp_crm_cpu.v",    
+          "parameter"    : {}                           
+                                                          
+      },                                                  
+      {                                                   
+          "instance_name": "u_cpu_sub",      
+          "wire_name"    : "cpu_sub_",           
+          "file_path"    : "./input/mvp/cpu_sub.v",    
+          "parameter"    : {"PDMA_CH":20}                           
+                                                          
+      }                                                  
+   ]                                       
+}                                          

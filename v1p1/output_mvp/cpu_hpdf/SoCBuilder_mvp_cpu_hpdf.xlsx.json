@@ -1,0 +1,2841 @@
+{
+	"top": {
+		"modname": "cpu_hpdf",
+		"ports": []
+	},
+	"module": {
+		"nic400_cpu_bus_r0p06": {
+			"modname": "nic400_cpu_bus_r0p06",
+			"filename": "../../../hardware/lib/asic/sys_peri/arm/nic400/nic400_cpu_bus_r0p06/nic400/verilog/nic400_cpu_bus_r0p06.v",
+			"ports": [
+				{
+					"port": "awid_cpu2main_m6",
+					"dir": "output",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "awaddr_cpu2main_m6",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "awlen_cpu2main_m6",
+					"dir": "output",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "awsize_cpu2main_m6",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "awburst_cpu2main_m6",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "awlock_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awcache_cpu2main_m6",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "awprot_cpu2main_m6",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "awvalid_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awready_cpu2main_m6",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wdata_cpu2main_m6",
+					"dir": "output",
+					"msb": 127,
+					"lsb": 0
+				},
+				{
+					"port": "wstrb_cpu2main_m6",
+					"dir": "output",
+					"msb": 15,
+					"lsb": 0
+				},
+				{
+					"port": "wlast_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wvalid_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wready_cpu2main_m6",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "bid_cpu2main_m6",
+					"dir": "input",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "bresp_cpu2main_m6",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "bvalid_cpu2main_m6",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "bready_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arid_cpu2main_m6",
+					"dir": "output",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "araddr_cpu2main_m6",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "arlen_cpu2main_m6",
+					"dir": "output",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "arsize_cpu2main_m6",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "arburst_cpu2main_m6",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "arlock_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arcache_cpu2main_m6",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "arprot_cpu2main_m6",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "arvalid_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arready_cpu2main_m6",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rid_cpu2main_m6",
+					"dir": "input",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "rdata_cpu2main_m6",
+					"dir": "input",
+					"msb": 127,
+					"lsb": 0
+				},
+				{
+					"port": "rresp_cpu2main_m6",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "rlast_cpu2main_m6",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rvalid_cpu2main_m6",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rready_cpu2main_m6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awuser_cpu2main_m6",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "aruser_cpu2main_m6",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "paddr_cpu2mvp_m5",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pselx_cpu2mvp_m5",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "penable_cpu2mvp_m5",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "pwrite_cpu2mvp_m5",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "prdata_cpu2mvp_m5",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pwdata_cpu2mvp_m5",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pready_cpu2mvp_m5",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "pslverr_cpu2mvp_m5",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awid_cpu2peri_m7",
+					"dir": "output",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "awaddr_cpu2peri_m7",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "awlen_cpu2peri_m7",
+					"dir": "output",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "awsize_cpu2peri_m7",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "awburst_cpu2peri_m7",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "awlock_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awcache_cpu2peri_m7",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "awprot_cpu2peri_m7",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "awvalid_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awready_cpu2peri_m7",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wdata_cpu2peri_m7",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "wstrb_cpu2peri_m7",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "wlast_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wvalid_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wready_cpu2peri_m7",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "bid_cpu2peri_m7",
+					"dir": "input",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "bresp_cpu2peri_m7",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "bvalid_cpu2peri_m7",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "bready_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arid_cpu2peri_m7",
+					"dir": "output",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "araddr_cpu2peri_m7",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "arlen_cpu2peri_m7",
+					"dir": "output",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "arsize_cpu2peri_m7",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "arburst_cpu2peri_m7",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "arlock_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arcache_cpu2peri_m7",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "arprot_cpu2peri_m7",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "arvalid_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arready_cpu2peri_m7",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rid_cpu2peri_m7",
+					"dir": "input",
+					"msb": 4,
+					"lsb": 0
+				},
+				{
+					"port": "rdata_cpu2peri_m7",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "rresp_cpu2peri_m7",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "rlast_cpu2peri_m7",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rvalid_cpu2peri_m7",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rready_cpu2peri_m7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "haddr_cpu2mat_m0",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hburst_cpu2mat_m0",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "hprot_cpu2mat_m0",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "hsize_cpu2mat_m0",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "htrans_cpu2mat_m0",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "hwdata_cpu2mat_m0",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hwrite_cpu2mat_m0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hrdata_cpu2mat_m0",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hresp_cpu2mat_m0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hready_cpu2mat_m0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awid_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "awaddr_dma330_s1",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "awlen_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "awsize_dma330_s1",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "awburst_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "awlock_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "awcache_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "awprot_dma330_s1",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "awvalid_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awready_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wid_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "wdata_dma330_s1",
+					"dir": "input",
+					"msb": 127,
+					"lsb": 0
+				},
+				{
+					"port": "wstrb_dma330_s1",
+					"dir": "input",
+					"msb": 15,
+					"lsb": 0
+				},
+				{
+					"port": "wlast_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wvalid_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "wready_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "bid_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "bresp_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "bvalid_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "bready_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arid_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "araddr_dma330_s1",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "arlen_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "arsize_dma330_s1",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "arburst_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "arlock_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "arcache_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "arprot_dma330_s1",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "arvalid_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "arready_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rid_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "rdata_dma330_s1",
+					"dir": "output",
+					"msb": 127,
+					"lsb": 0
+				},
+				{
+					"port": "rresp_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "rlast_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rvalid_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "rready_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "awuser_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "aruser_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "haddr_mat2cpu_s0",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hburst_mat2cpu_s0",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "hprot_mat2cpu_s0",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "hsize_mat2cpu_s0",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "htrans_mat2cpu_s0",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "hwdata_mat2cpu_s0",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hwrite_mat2cpu_s0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hrdata_mat2cpu_s0",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hreadyout_mat2cpu_s0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hresp_mat2cpu_s0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hselx_mat2cpu_s0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hready_mat2cpu_s0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hauser_mat2cpu_s0",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "paddr_cpu_peri0_m1",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pselx_cpu_peri0_m1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "penable_cpu_peri0_m1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "pwrite_cpu_peri0_m1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "prdata_cpu_peri0_m1",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pwdata_cpu_peri0_m1",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pready_cpu_peri0_m1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "pslverr_cpu_peri0_m1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "haddr_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hburst_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "hprot_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "hsize_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "htrans_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "hwdata_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hwrite_cpu_peri1_m2",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hrdata_cpu_peri1_m2",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hresp_cpu_peri1_m2",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hready_cpu_peri1_m2",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "haddr_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hburst_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "hprot_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "hsize_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "htrans_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "hwdata_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hwrite_sfmc_auto_m3",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hrdata_sfmc_auto_m3",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "hresp_sfmc_auto_m3",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "hready_sfmc_auto_m3",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "paddr_main_peri_m4",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pselx_main_peri_m4",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "penable_main_peri_m4",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "pwrite_main_peri_m4",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "prdata_main_peri_m4",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pwdata_main_peri_m4",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "pready_main_peri_m4",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "pslverr_main_peri_m4",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2mainclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2mainresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2mvpclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2mvpclken",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2mvpresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2periclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu2periresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu_busclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu_busclken",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu_busresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu_periclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu_periclken",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_cpu_periresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_main_systemclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_main_systemclken",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_main_systemresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "mainclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "mainclk_r",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "mainresetn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "mainresetn_r",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				}
+			],
+			"symbol_info": {
+				"axi$$_cpu2main_m6": {
+					"protocol": "axi",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_cpu2main_m6",
+					"option": "",
+					"parameter": {
+						"ID_WIDTH": 5,
+						"ADDR_WIDTH": 32,
+						"LEN_WIDTH": 8,
+						"USER_WIDTH": 2,
+						"DATA_WIDTH": 128,
+						"BYTE_WIDTH": 16
+					}
+				},
+				"apb$$_cpu2mvp_m5": {
+					"protocol": "apb",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_cpu2mvp_m5",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"axi$$_cpu2peri_m7": {
+					"protocol": "axi",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_cpu2peri_m7",
+					"option": "",
+					"parameter": {
+						"ID_WIDTH": 5,
+						"ADDR_WIDTH": 32,
+						"LEN_WIDTH": 8,
+						"DATA_WIDTH": 32,
+						"BYTE_WIDTH": 4
+					}
+				},
+				"ahb$$_cpu2mat_m0": {
+					"protocol": "ahb",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_cpu2mat_m0",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"axi$$_dma330_s1": {
+					"protocol": "axi",
+					"portdir": "",
+					"type": "slv",
+					"prefix": "",
+					"postfix": "_dma330_s1",
+					"option": "",
+					"parameter": {
+						"ID_WIDTH": 4,
+						"ADDR_WIDTH": 32,
+						"LEN_WIDTH": 4,
+						"USER_WIDTH": 2,
+						"DATA_WIDTH": 128,
+						"BYTE_WIDTH": 16
+					}
+				},
+				"ahb$$_mat2cpu_s0": {
+					"protocol": "ahb",
+					"portdir": "",
+					"type": "slv",
+					"prefix": "",
+					"postfix": "_mat2cpu_s0",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32,
+						"USER_WIDTH": 2
+					}
+				},
+				"apb$$_cpu_peri0_m1": {
+					"protocol": "apb",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_cpu_peri0_m1",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"ahb$$_cpu_peri1_m2": {
+					"protocol": "ahb",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_cpu_peri1_m2",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"ahb$$_sfmc_auto_m3": {
+					"protocol": "ahb",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_sfmc_auto_m3",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"apb$$_main_peri_m4": {
+					"protocol": "apb",
+					"portdir": "",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_main_peri_m4",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				}
+			}
+		},
+		"mvp_crm_cpu": {
+			"modname": "mvp_crm_cpu",
+			"filename": "../../../hardware/rtl/system/asic/crm/mvp_crm_cpu.v",
+			"ports": [
+				{
+					"port": "i_test_bypass",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_peri",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_pclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_prstn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_psel",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_penable",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_pwrite",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_paddr",
+					"dir": "input",
+					"msb": 11,
+					"lsb": 0
+				},
+				{
+					"port": "i_apb_pwdata",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_apb_prdata",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_cpu",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_cpu_peri",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_cpu2peri",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_main_system",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_cpu2mvp",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_cpu2main",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_sfmc_pad_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_xtal_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_test_clk200",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_test_clk100",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_cpu",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_cpu",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_cpu_bus",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_cpu_bus",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_sram",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_sram",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_rom",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_rom",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_mclk_dma",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_mclk_dma",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_sclk_dma",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_sclk_dma",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_cpu_peri",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_cpu_peri",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_nfc",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_nfc",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_sfmc",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_sfmc",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_sfmc_flash",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_sfmc_flash",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_tracein",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_cpu2peri",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_cpu2peri",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_main_system",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_main_system",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_cpu2mvp",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_cpu2mvp",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_cpu2main",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_cpu2main",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clk_sfmc_pad",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_clken_dma330",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_cpu_stclk",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_mem",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_bus",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_ip",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_core",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_scan_clk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_scan_mode",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_scan_rstn",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				}
+			],
+			"symbol_info": {
+				"apb$.apb_$": {
+					"protocol": "apb",
+					"portdir": "pre",
+					"type": "slv",
+					"prefix": "apb_",
+					"postfix": "",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 12,
+						"DATA_WIDTH": 32
+					}
+				}
+			}
+		},
+		"cpu_sub": {
+			"modname": "cpu_sub",
+			"filename": "../../../hardware/rtl/system/asic/hpdf_top/sub_top/cpu_sub.v",
+			"ports": [
+				{
+					"port": "i_clk_cpu",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_cpu",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_sram",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_sram",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_rom",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_rom",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_mclk_dma",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_mclk_dma",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_sclk_dma",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_sclk_dma",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clken_dma330",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_bus_m0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_bus_m0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_nfc",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_nfc",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_sfmc",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_sfmc",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_sfmc_flash",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_sfmc_flash",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_tracein",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_clk_cpu_stclk",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rstn_core",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rstn_core",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_crm_apb_psel",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_crm_apb_penable",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_crm_apb_pwrite",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_crm_apb_paddr",
+					"dir": "output",
+					"msb": 11,
+					"lsb": 0
+				},
+				{
+					"port": "o_crm_apb_pwdata",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_crm_apb_prdata",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_haddr_mat2cpu_s0",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hburst_mat2cpu_s0",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "o_hprot_mat2cpu_s0",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_hsize_mat2cpu_s0",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "o_htrans_mat2cpu_s0",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_hwdata_mat2cpu_s0",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hwrite_mat2cpu_s0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_hrdata_mat2cpu_s0",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_hreadyout_mat2cpu_s0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_hresp_mat2cpu_s0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_hselx_mat2cpu_s0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_hready_mat2cpu_s0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_hauser_mat2cpu_s0",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_awid_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_awaddr_dma330_s1",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_awlen_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_awsize_dma330_s1",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "o_awburst_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_awlock_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_awcache_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_awprot_dma330_s1",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "o_awvalid_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_awready_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_wid_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_wdata_dma330_s1",
+					"dir": "output",
+					"msb": 127,
+					"lsb": 0
+				},
+				{
+					"port": "o_wstrb_dma330_s1",
+					"dir": "output",
+					"msb": 15,
+					"lsb": 0
+				},
+				{
+					"port": "o_wlast_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_wvalid_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_wready_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_bid_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_bresp_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_bvalid_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_bready_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_arid_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_araddr_dma330_s1",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_arlen_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_arsize_dma330_s1",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "o_arburst_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_arlock_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_arcache_dma330_s1",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_arprot_dma330_s1",
+					"dir": "output",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "o_arvalid_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_arready_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rid_dma330_s1",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_rdata_dma330_s1",
+					"dir": "input",
+					"msb": 127,
+					"lsb": 0
+				},
+				{
+					"port": "i_rresp_dma330_s1",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_rlast_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_rvalid_dma330_s1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_rready_dma330_s1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_aruser_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "o_awuser_dma330_s1",
+					"dir": "output",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_htrans_cpu2mat_m0",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_haddr_cpu2mat_m0",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_hprot_cpu2mat_m0",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_hwrite_cpu2mat_m0",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_hsize_cpu2mat_m0",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "i_hburst_cpu2mat_m0",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "i_hwdata_cpu2mat_m0",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hrdata_cpu2mat_m0",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hresp_cpu2mat_m0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_hready_cpu2mat_m0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_pselx_cpu_m1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_penable_cpu_m1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_pwrite_cpu_m1",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_paddr_cpu_m1",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_pwdata_cpu_m1",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_prdata_cpu_m1",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_pready_cpu_m1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_pslverr_cpu_m1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_htrans_cpu_m2",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_haddr_cpu_m2",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_hprot_cpu_m2",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_hwrite_cpu_m2",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_hsize_cpu_m2",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "i_hburst_cpu_m2",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "i_hwdata_cpu_m2",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hrdata_cpu_m2",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hready_cpu_m2",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_hresp_cpu_m2",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_htrans_sfmc_m3",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_haddr_sfmc_m3",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "i_hprot_sfmc_m3",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_hwrite_sfmc_m3",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_hsize_sfmc_m3",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "i_hburst_sfmc_m3",
+					"dir": "input",
+					"msb": 2,
+					"lsb": 0
+				},
+				{
+					"port": "i_hwdata_sfmc_m3",
+					"dir": "input",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hready_sfmc_m3",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_hrdata_sfmc_m3",
+					"dir": "output",
+					"msb": 31,
+					"lsb": 0
+				},
+				{
+					"port": "o_hresp_sfmc_m3",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_ema",
+					"dir": "input",
+					"msb": 38,
+					"lsb": 0
+				},
+				{
+					"port": "i_boot_sel_y",
+					"dir": "input",
+					"msb": 1,
+					"lsb": 0
+				},
+				{
+					"port": "i_test_mode",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "t_jtag_tck",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_jtag_tck_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_jtag_tmms_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_jtag_ntrst_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_jtag_tmms_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_jtag_tmms_oe",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_jtag_tdi_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_jtag_tdo_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_jtag_tdo_oe",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_irq_cpu",
+					"dir": "input",
+					"msb": 239,
+					"lsb": 0
+				},
+				{
+					"port": "o_cm3_traceclk_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_cm3_tracedata_a",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_nfc_cfgadvflash_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_nfc_cfgaddrcycle_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_nfc_cfgpagesize_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_nfc_rnb",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_nfc",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_nfc_data_y",
+					"dir": "input",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_data_a",
+					"dir": "output",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_data_oe",
+					"dir": "output",
+					"msb": 7,
+					"lsb": 0
+				},
+				{
+					"port": "i_nfc_rnb_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_cle_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_ale_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_nce_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_nre_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_nfc_nwe_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_sfmc",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_sfmc_sclk_y",
+					"dir": "input",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_sfmc_sclk_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_sfmc_sclk_oe",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_sfmc_csn_a",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "i_sfmc_data_y",
+					"dir": "input",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_sfmc_data_a",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "o_sfmc_data_oe",
+					"dir": "output",
+					"msb": 3,
+					"lsb": 0
+				},
+				{
+					"port": "i_dmac_breq",
+					"dir": "input",
+					"msb": 19,
+					"lsb": 0
+				},
+				{
+					"port": "i_dmac_sreq",
+					"dir": "input",
+					"msb": 19,
+					"lsb": 0
+				},
+				{
+					"port": "i_dmac_lbreq",
+					"dir": "input",
+					"msb": 19,
+					"lsb": 0
+				},
+				{
+					"port": "i_dmac_lsreq",
+					"dir": "input",
+					"msb": 19,
+					"lsb": 0
+				},
+				{
+					"port": "o_dmac_clr",
+					"dir": "output",
+					"msb": 19,
+					"lsb": 0
+				},
+				{
+					"port": "o_dmac_tc",
+					"dir": "output",
+					"msb": 19,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac0",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac1",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac2",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac3",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac4",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac5",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac6",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_dmac7",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				},
+				{
+					"port": "o_irq_abort_dmac",
+					"dir": "output",
+					"msb": 0,
+					"lsb": 0
+				}
+			],
+			"symbol_info": {
+				"apb$.crm_apb_$": {
+					"protocol": "apb",
+					"portdir": "pre",
+					"type": "mst",
+					"prefix": "crm_apb_",
+					"postfix": "",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 12,
+						"DATA_WIDTH": 32
+					}
+				},
+				"ahb$.$_mat2cpu_s0": {
+					"protocol": "ahb",
+					"portdir": "pre",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_mat2cpu_s0",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32,
+						"USER_WIDTH": 2
+					}
+				},
+				"axi$.$_dma330_s1": {
+					"protocol": "axi",
+					"portdir": "pre",
+					"type": "mst",
+					"prefix": "",
+					"postfix": "_dma330_s1",
+					"option": "",
+					"parameter": {
+						"ID_WIDTH": 4,
+						"ADDR_WIDTH": 32,
+						"LEN_WIDTH": 4,
+						"USER_WIDTH": 2,
+						"DATA_WIDTH": 128,
+						"BYTE_WIDTH": 16
+					}
+				},
+				"ahb$.$_cpu2mat_m0": {
+					"protocol": "ahb",
+					"portdir": "pre",
+					"type": "slv",
+					"prefix": "",
+					"postfix": "_cpu2mat_m0",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"apb$.$_cpu_m1": {
+					"protocol": "apb",
+					"portdir": "pre",
+					"type": "slv",
+					"prefix": "",
+					"postfix": "_cpu_m1",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"ahb$.$_cpu_m2": {
+					"protocol": "ahb",
+					"portdir": "pre",
+					"type": "slv",
+					"prefix": "",
+					"postfix": "_cpu_m2",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				},
+				"ahb$.$_sfmc_m3": {
+					"protocol": "ahb",
+					"portdir": "pre",
+					"type": "slv",
+					"prefix": "",
+					"postfix": "_sfmc_m3",
+					"option": "",
+					"parameter": {
+						"ADDR_WIDTH": 32,
+						"DATA_WIDTH": 32
+					}
+				}
+			}
+		}
+	},
+	"instance": {
+		"u_cpu_bus": {
+			"modname": "nic400_cpu_bus_r0p06",
+			"prefix": "cpu_bus_",
+			"parameter": {}
+		},
+		"u_cpu_crm": {
+			"modname": "mvp_crm_cpu",
+			"prefix": "cpu_crm_",
+			"parameter": {}
+		},
+		"u_cpu_sub": {
+			"modname": "cpu_sub",
+			"prefix": "cpu_sub_",
+			"parameter": {
+				"PDMA_CH": 20
+			}
+		}
+	},
+	"connection": []
+}

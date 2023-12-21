@@ -1,4 +1,4 @@
-#!/user/de03/DE/util/anaconda3/bin/python3
+#!/user/jimmy/anaconda3/bin/python3
 # coding: utf-8
 #===============================================================================
 #  File name   : tool_core_gen.py
@@ -295,12 +295,11 @@ def write_excel(i_top_name, i_file_list, i_excel_name, i_out_folder):
     # make excel doc
     # gen = alpgen(json_file_name)
     gen = alpgen(json.get_json())
-
     check_dir(excel_file_name)
     gen.write_excel_group(excel_file_name)
 
 SUB_TOP_LIST = []    # json_sub object list
-def write_rtl (i_excel_name, i_out_folder, enb_json_i):
+def write_rtl (i_excel_name, i_out_folder):
     global HIER_DIC
     SUB_TOP_LIST = []
     HIER_LIST = []  # format = [ $hpdf_0: [inst_0, inst_1], $hpdf_1: [inst_2, inst_3], $top: [$hpdf_0, $hpdf_1] ]
@@ -349,7 +348,7 @@ def write_rtl (i_excel_name, i_out_folder, enb_json_i):
             # bus_symbol to top_port - 2022-04-12
             elif (di['con_port'].find('$')>=0 and di['con_inst']==None):
                 bus_symbol = di['port']
-                bus_type = di['dir'].split('$')[0]
+                bus_type = di['dir'].split('$')[1]
                 top_symbol = di['con_port']
                 for di in json_ref.get_bus_info(inst_name, bus_symbol, bus_type):
                     port = di['port']
@@ -458,22 +457,12 @@ def write_rtl (i_excel_name, i_out_folder, enb_json_i):
     #---------------------------------------------------------------
     for json_sub in SUB_TOP_LIST:
         mod_name = json_sub.JSON['top']['modname']
-#        json_name = mod_name+'.json'
+        json_name = mod_name+'.json'
         rtl_name = mod_name+'.v'
         # json_file_name = os.path.join(i_out_folder, json_name)
         rtl_file_name  = os.path.join(i_out_folder, rtl_name)
         # json_sub.write_json(json_file_name)
         write_comment(json_sub)
-
-        if enb_json_i:
-            json_name = mod_name+'.json'
-            json_file_name = os.path.join(i_out_folder, json_name)
-            print('=============================')
-            print(json_file_name)
-            check_dir(json_file_name)
-            with open(json_file_name, 'w', encoding='utf-8') as f:
-                json.dump(json_sub.get_json(), f, indent="\t")
-
         gen = alpgen(json_sub.get_json())
         check_dir(rtl_file_name)
         gen.write_rtl(rtl_file_name)
@@ -514,7 +503,7 @@ def write_comment(obj_i):
 
     dates = "{0}-{1:0>2}-{2:0>2}  {3}:{4}".format(year, month, day, hour, minute)
 
-    result = Comment.format('PNAI70X', modname, VERSION, DESIGNER, dates)
+    result = Comment.format(PROJECT, modname, VERSION, DESIGNER, dates)
     obj_i.JSON['top']['comment'] = {}
     obj_i.JSON['top']['comment']['pre'] = result
     return True
@@ -528,14 +517,6 @@ file_list = []
 top_name   = dict_prj['top_name']
 excel_name = dict_prj['excel_name']
 out_folder = dict_prj['output_folder']
-
-if dict_prj.get('enable_output_json'):
-    if dict_prj['enable_output_json'].lower()=='true':
-        enable_json = True
-    else:
-        enable_json = False
-else:
-    enable_json = False
 
 if dict_prj.get('alp_tools')!=None:
     VERSION = dict_prj['alp_tools']['version']
@@ -572,6 +553,15 @@ elif option=='2':
 if _in=='1':
     write_excel(top_name, file_list, excel_name, out_folder)
 elif _in=='2':
-    write_rtl(excel_name, out_folder, enable_json)
+    write_rtl(excel_name, out_folder)
 else:
     print ('[ERROR] Not Support')
+
+
+
+
+
+
+
+
+
